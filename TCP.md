@@ -15,7 +15,7 @@ grammar_cjkRuby: true
 ![enter description here](./images/TCP头部格式.PNG)
  &nbsp;&ensp;&emsp;
 　　序列号：在建立连接时由计算机生成的随机数作为其初始值，通过 SYN 包传给接收端主机，每发送一次数据，就「累加」一次该「数据字节数」的大小。<font color=red>用来解决网络包乱序问题。<font color=b><br>
-  确认应答号：指下一次「期望」收到的数据的序列号，发送端收到这个确认应答以后可以认为在这个序号以前的数据都已经被正常接收。<font color=red>用来解决不丢包的问题。<font color=b><br>
+　　确认应答号：指下一次「期望」收到的数据的序列号，发送端收到这个确认应答以后可以认为在这个序号以前的数据都已经被正常接收。<font color=red>用来解决不丢包的问题。<font color=b><br>
 　　控制位：<br>
 　　　ACK：该位为 1 时，「确认应答」的字段变为有效，TCP 规定除了最初建立连接时的 SYN包之外该位必须设置为 1 。<br>
 　　　RST：该位为 1 时，表示 TCP 连接中出现异常必须强制断开连接。<br>
